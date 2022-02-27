@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&family=Sacramento&family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    background-color: #000;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    
+    background-image: url(/img/img_homepage_slider1\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    opacity: 0.8;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+header nav{
+    width: 60%;
+    top: 50px;
+    height: 80px;
+    position: absolute;
+
+
+    
+}
+header nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+header nav ul li{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header nav ul li img{
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+    
+    
+    
+
+}
+header nav ul li a{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    border-bottom: #fff 1px solid;
+} 
+header h1{
+    font-size:  4.5em;
+    color: #fff;
+    font-family: 'Playfair Display SC', serif;
+}
+header hr{
+    width: 800px;
+    height: 1px;
+    color: #fff;
+}
+header p{
+    font-family: 'Sacramento', cursive;
+    font-weight: 300;
+    font-size: 4rem;
+}
+main{
+    width: 100%;
+    
+    background-color: #fff;
+}
+main .big{
+    width: 90%;
+    margin: auto;
+}
+main .big p{
+ text-transform: uppercase;
+text-align: center;
+letter-spacing: 2px;
+padding-top: 30px;
+
+}
+main .big h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Playfair Display SC', serif;
+}
+main .big hr{
+    width: 400px;
+    margin: auto;
+}
+main .big .big-container{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+main .big .big-container .child{
+    width: 33.3%;
+    height: 390px;
+    position: relative;
+}
+main .big .big-container .child:hover .card-text{
+    visibility: visible;
+    opacity: 1;
+}
+main .big .big-container .child .card-img{
+    width: 100%;
+    height: 100%;
+}
+main .big .big-container .child .card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.child .card-text{
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    left: 40px;
+    top: 40px;
+    background-color: rgba(29, 26, 25, 0.5);
+    visibility: hidden;
+    opacity: 0;
+}
+.child .card-text h1{
+    color: #fff;
+}
+.child .card-text p{
+    color: #fff;
+}
